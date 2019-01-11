@@ -1,5 +1,5 @@
 import {User} from "./user";
-import {Notification} from "./Notification";
+import {Notification} from "./notification";
 /**
  * Created by Heka on 1/11/2019.
  */
@@ -12,10 +12,10 @@ export class UserNotification implements Deserializable{
 
   deserialize(single: any){
     if (single == null) return null;
-    this.user = new User().deserialize(single.user);
+    this.user = new User().deserialize(<any>single.user);
     delete single.user;
 
-    this.notification = new Notification().deserialize(single.notification);
+    this.notification = new Notification().deserialize(<any>single.notification);
     delete single.notification;
 
     //noinspection TypeScriptUnresolvedFunction

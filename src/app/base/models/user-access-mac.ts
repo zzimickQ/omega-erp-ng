@@ -13,7 +13,7 @@ export class UserAccessMac implements Deserializable {
 
   deserialize(single: any) {
     if (single == null) return null;
-    this.user = new User().deserialize(single.user);
+    this.user = new User().deserialize(<any>single.user);
     delete single.user;
     //noinspection TypeScriptUnresolvedFunction
     Object.assign(this, single);

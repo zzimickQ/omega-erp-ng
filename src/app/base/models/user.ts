@@ -1,6 +1,6 @@
 import {JobPosition} from "./job-position";
 import {Privilege} from "./privilege";
-import {UserAccessMac} from "./UserAccessMac";
+import {UserAccessMac} from "./user-access-mac";
 /**
  * Created by Heka on 1/10/2019.
  */
@@ -28,13 +28,13 @@ export class User implements Deserializable {
   deserialize(single: any) {
 
     if (single == null) return null;
-    this.jobPosition = new JobPosition().deserialize(single.jobPosition);
+    this.jobPosition = new JobPosition().deserialize(<any>single.jobPosition);
     delete single.jobPosition;
 
-    this.privileges = new Privilege().deserializeArray(single.privileges);
+    this.privileges = new Privilege().deserializeArray(<any>single.privileges);
     delete single.privileges;
 
-    this.userAccessMacs = new UserAccessMac().deserializeArray(single.userAccessMacs);
+    this.userAccessMacs = new UserAccessMac().deserializeArray(<any>single.userAccessMacs);
     delete single.userAccessMacs;
 
     //noinspection TypeScriptUnresolvedFunction
@@ -44,7 +44,6 @@ export class User implements Deserializable {
 
 
   deserializeArray(multi: any) {
-
     if(multi == null) return [];
     let arrayOfMe = [];
     for(let one of multi) {

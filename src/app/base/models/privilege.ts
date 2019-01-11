@@ -13,7 +13,7 @@ export class Privilege implements Deserializable {
 
 
   deserialize(single: any) {
-    this.users = new User().deserializeArray(single.users);
+    this.users = new User().deserializeArray(<any>single.users);
     delete single.users;
     //noinspection TypeScriptUnresolvedFunction
     Object.assign(this, single);

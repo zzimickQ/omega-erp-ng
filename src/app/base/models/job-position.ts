@@ -21,13 +21,13 @@ export class JobPosition implements Deserializable {
 
   public deserialize(single: any) {
     if(single == null) return null;
-    this.supervisor = new JobPosition().deserialize(single.supervisor);
+    this.supervisor = new JobPosition().deserialize(<any>single.supervisor);
     delete single.supervisor;
-    this.category = new JobCategory().deserialize(single.category);
+    this.category = new JobCategory().deserialize(<any>single.category);
     delete single.category;
-    this.users = new User().deserializeArray(single.users);
+    this.users = new User().deserializeArray(<any>single.users);
     delete single.users;
-    this.supervises = new JobPosition().deserializeArray(single.supervises);
+    this.supervises = new JobPosition().deserializeArray(<any>single.supervises);
     delete single.supervises;
     //noinspection TypeScriptUnresolvedFunction
     Object.assign(this, single);

@@ -11,7 +11,7 @@ export class PrivilegeGroup implements Deserializable{
 
   deserialize(single: any){
     if (single == null) return null;
-    this.privileges = new Privilege().deserializeArray(single.privileges);
+    this.privileges = new Privilege().deserializeArray(<any>single.privileges);
     delete single.privileges;
 
     //noinspection TypeScriptUnresolvedFunction
