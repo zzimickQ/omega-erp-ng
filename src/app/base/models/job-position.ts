@@ -13,16 +13,16 @@ export class JobPosition implements Deserializable {
   public level: number;
   public users: User[];
   public supervises: JobPosition[];
-  public supervisedBy: JobPosition;
+  public supervisor: JobPosition;
   // public defaultPrivileges:
   public category: JobCategory;
 
   constructor() {}
 
-  deserialize(single: any) {
+  public deserialize(single: any) {
     if(single == null) return null;
-    this.supervisedBy = new JobPosition().deserialize(single.supervisedBy);
-    delete single.supervisedBy;
+    this.supervisor = new JobPosition().deserialize(single.supervisor);
+    delete single.supervisor;
     this.category = new JobCategory().deserialize(single.category);
     delete single.category;
     this.users = new User().deserializeArray(single.users);
@@ -33,7 +33,7 @@ export class JobPosition implements Deserializable {
     Object.assign(this, single);
     return this;
   }
-  deserializeArray(multi: any) {
+  public deserializeArray(multi: any) {
     if(multi == null) return [];
     let arrayOfMe = [];
     for(let one of multi) {

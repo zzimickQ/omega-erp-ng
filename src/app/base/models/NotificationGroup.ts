@@ -1,18 +1,15 @@
 import {User} from "./user";
 /**
- * Created by Heka on 1/10/2019.
+ * Created by Heka on 1/11/2019.
  */
+export class NotificationGroup implements Deserializable{
 
+  public id: number;
+  public name: string;
+  public users: User[];
 
-export class Privilege implements Deserializable {
-
-    public id: number;
-    public name: String;
-    public discription: String;
-    public users: User[];
-
-
-  deserialize(single: any) {
+  deserialize(single: any){
+    if (single == null) return null;
     this.users = new User().deserializeArray(single.users);
     delete single.users;
     //noinspection TypeScriptUnresolvedFunction
@@ -20,15 +17,13 @@ export class Privilege implements Deserializable {
     return this;
   }
 
-
-  deserializeArray(multi: any) {
+  deserializeArray(multi: any){
     if(multi == null) return [];
     let arrayOfMe = [];
     for(let one of multi) {
-      arrayOfMe.push(new Privilege().deserialize(one));
+      arrayOfMe.push(new NotificationGroup().deserialize(one));
     }
     return arrayOfMe;
-
   }
 
 }
