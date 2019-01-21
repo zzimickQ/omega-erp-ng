@@ -5,11 +5,11 @@ export class Vacancy implements Deserializable {
 
   public id:number;
   public recruitFrom:string;
-  public :;
-  public :;
-  public :;
-  public :;
-  public :;
+  //public :;
+  //public :;
+  //public :;
+  //public :;
+  //public :;
 
   deserialize(single: any) {
     if (single == null) return null;

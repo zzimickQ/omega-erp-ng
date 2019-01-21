@@ -19,7 +19,7 @@ export class Applicants implements Deserializable {
   public passed:number;
   public black_listed:boolean;
   public vacancy:Vacancy;
-  public primaryPhoneNumber:PhoneNumbers;
+  // public primaryPhoneNumber:;
   public primaryAddress:Address;
 
 
@@ -31,8 +31,8 @@ export class Applicants implements Deserializable {
     this.vacancy = new Vacancy().deserialize(single.vacancy);
     delete single.vacancy;
 
-    this.primaryPhoneNumber = new PhoneNumbers().deserialize(single.primaryPhoneNumber);
-    delete single.primaryPhoneNumber;
+    //this.primaryPhoneNumber = new PhoneNumbers().deserialize(single.primaryPhoneNumber);
+    //delete single.primaryPhoneNumber;
 
     this.primaryAddress = new Address().deserialize(single.primaryAddress);
     delete single.primaryAddress;

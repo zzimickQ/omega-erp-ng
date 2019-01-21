@@ -53,5 +53,8 @@ export class User implements Deserializable {
 
   }
 
+  get fullName() {
+    return this.firstName + " " + this.lastName;
+  }
 
 }

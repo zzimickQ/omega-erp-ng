@@ -21,7 +21,7 @@ export class Notification implements Deserializable{
     return this;
   }
 
-  deserializeArray(multi: Object){
+  deserializeArray(multi: any){
     if(multi == null) return [];
     let arrayOfMe = [];
     for(let one of multi) {
