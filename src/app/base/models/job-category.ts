@@ -18,14 +18,14 @@ export class JobCategory implements Deserializable {
 
   deserialize(single: any): any {
     if(single == null) return null;
-    this.jobPositions = new JobPosition().deserializeArray(single.jobPositions);
+    this.jobPositions = new JobPosition().deserializeArray(<any>single.jobPositions);
     delete single.jobPositions;
     //noinspection TypeScriptUnresolvedFunction
     Object.assign(this, single);
     return this;
   }
 
-  deserializeArray(multi: any) {
+  deserializeArray(multi) {
     if(multi == null) return [];
     let arrayOfMe = [];
     for(let one of multi) {
