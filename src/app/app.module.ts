@@ -4,7 +4,10 @@ import {NgModule} from '@angular/core';
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {NbThemeModule, NbLayoutModule, NbInputModule} from '@nebular/theme';
+import {
+  NbThemeModule, NbLayoutModule, NbInputModule, NbSidebarModule, NbSidebarService,
+  NbListModule
+} from '@nebular/theme';
 import {UserSmartComponent} from './comps/smart/user-smart/user-smart.component';
 import {UserListComponent} from './comps/dumb/user-list/user-list.component';
 import {UserCreateComponent} from './comps/dumb/user-create/user-create.component';
@@ -19,6 +22,7 @@ import {HttpClientModule} from "@angular/common/http";
     UserCreateComponent,
     UserDetailComponent,
     AppComponent,
+
   ],
   imports: [
     FormsModule,
@@ -30,9 +34,12 @@ import {HttpClientModule} from "@angular/common/http";
     NbInputModule,
     NbThemeModule.forRoot({name: 'default'}),
     NbLayoutModule,
-    NbInputModule
+    NbInputModule,
+    NbSidebarModule,
+    NbListModule
+
   ],
-  providers: [],
+  providers: [NbSidebarService],
   bootstrap: [AppComponent]
 })
 export class AppModule {
