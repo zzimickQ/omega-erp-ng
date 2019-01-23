@@ -5,11 +5,14 @@ export class Vacancy implements Deserializable {
 
   public id:number;
   public recruitFrom:string;
-  //public :;
-  //public :;
-  //public :;
-  //public :;
-  //public :;
+  public postDate:Date;
+  public updateDate:Date;
+  public appProcessDiscription:string;
+  public requestedQuantity:number;
+  public deadLine:Date;
+  public reanounce:number;
+  public remrk:string;
+  public requisition: PersonnelRequisition;
 
   deserialize(single: any) {
     if (single == null) return null;
