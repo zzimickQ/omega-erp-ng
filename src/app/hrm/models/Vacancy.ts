@@ -1,6 +1,9 @@
 /**
  * Created by Heka on 1/11/2019.
  */
+import {PersonnelRequisition} from "./Personnel-Requisition";
+import {JobPosition} from "../../base/models/job-position";
+
 export class Vacancy implements Deserializable {
 
   public id:number;
@@ -17,6 +20,8 @@ export class Vacancy implements Deserializable {
   deserialize(single: any) {
     if (single == null) return null;
 
+    this.requisition = new PersonnelRequisition().deserialize(<any>single.requisition);
+    delete single.requisition;
 
     //noinspection TypeScriptUnresolvedFunction
     Object.assign(this, single);
