@@ -4,6 +4,7 @@ import {NgModule} from '@angular/core';
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {NbThemeModule, NbLayoutModule, NbInputModule, NbSidebarModule, NbSidebarService} from '@nebular/theme';
 import {
   NbThemeModule, NbLayoutModule, NbInputModule, NbSidebarModule, NbSidebarService,
   NbListModule
@@ -14,6 +15,7 @@ import {UserCreateComponent} from './comps/dumb/user-create/user-create.componen
 import {UserDetailComponent} from './comps/dumb/user-detail/user-detail.component';
 import {ReactiveFormsModule, FormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
+import {BaseModule} from "./base/base.module";
 
 @NgModule({
   declarations: [
@@ -25,6 +27,7 @@ import {HttpClientModule} from "@angular/common/http";
 
   ],
   imports: [
+    BaseModule,
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
@@ -33,11 +36,15 @@ import {HttpClientModule} from "@angular/common/http";
     BrowserAnimationsModule,
     NbInputModule,
     NbThemeModule.forRoot({name: 'default'}),
+    NbSidebarModule,
     NbLayoutModule,
     NbInputModule,
     NbSidebarModule,
     NbListModule
 
+  ],
+  providers: [
+    NbSidebarService
   ],
   providers: [NbSidebarService],
   bootstrap: [AppComponent]

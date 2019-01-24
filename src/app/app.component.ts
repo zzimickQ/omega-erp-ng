@@ -9,8 +9,6 @@ import {JobCategory} from "./base/models/job-category";
 })
 export class AppComponent implements OnInit {
 
-
-
   ngOnInit(): void {
 
   }
