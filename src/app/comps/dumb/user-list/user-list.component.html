@@ -1,8 +1,0 @@
-
-<h2>List Of users</h2>
-<p>total user: {{ users?.length }}</p>
-<ul>
-  <li *ngFor="let user of users" (click)="userSelected.emit(user)">
-    <b>{{ user.fullName }}</b>
-  </li>
-</ul>
