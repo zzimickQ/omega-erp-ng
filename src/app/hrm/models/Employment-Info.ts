@@ -2,6 +2,7 @@ import {Employee} from "./Employee";
 import {JobPosition} from "../../base/models/job-position";
 import {Branch} from "./Branch";
 import {BenefitPackage} from "./Benefit-Package";
+import {Schedule} from "./Schedule";
 
 export class EmploymentInfo implements Deserializable {
 

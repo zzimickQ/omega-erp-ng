@@ -1,5 +1,4 @@
 import {Schedule} from "./Schedule";
-import {JobPosition} from "../../base/models/job-position";
 
 export class WeeklySchedule implements Deserializable {
 

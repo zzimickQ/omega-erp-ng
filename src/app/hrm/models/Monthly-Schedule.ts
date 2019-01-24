@@ -1,3 +1,4 @@
+import {Schedule} from "./Schedule";
 
 export class MonthlySchedule implements Deserializable {
 

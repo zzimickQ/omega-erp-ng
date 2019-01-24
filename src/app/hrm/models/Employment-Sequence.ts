@@ -2,6 +2,7 @@ import {Applicants} from "./Applicants";
 import {Employee} from "./Employee";
 import {Vacancy} from "./Vacancy";
 import {EmploymentInfo} from "./Employment-Info";
+import {PersonnelRequisition} from "./Personnel-Requisition";
 
 export class EmploymentSequence implements Deserializable {
 

@@ -1,6 +1,5 @@
 import {Benefit} from "./Benefit";
 import {BenefitPackage} from "./Benefit-Package";
-import {JobPosition} from "../../base/models/job-position";
 
 export class BenefitPackageWithBenefitValue implements Deserializable {
 
@@ -14,10 +13,10 @@ export class BenefitPackageWithBenefitValue implements Deserializable {
   deserialize(single: any) {
     if (single == null) return null;
 
-    this.benefits = new JobPosition().deserializeArray(<any>single.benefits);
+    this.benefits = new Benefit().deserializeArray(<any>single.benefits);
     delete single.benefits;
 
-    this.benefitPackages = new JobPosition().deserializeArray(<any>single.benefitPackages);
+    this.benefitPackages = new BenefitPackage().deserializeArray(<any>single.benefitPackages);
     delete single.benefitPackages;
 
     //noinspection TypeScriptUnresolvedFunction

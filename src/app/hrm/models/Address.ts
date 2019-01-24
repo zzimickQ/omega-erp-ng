@@ -6,7 +6,7 @@ export class Address implements Deserializable {
 
   public id: number;
   public refersTo: number;
-  public country: string = "Ethiopia";
+  public country: string;
   public city: string;
   public zone: string;
   public subCity: string;

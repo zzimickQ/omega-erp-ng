@@ -1,4 +1,5 @@
 import {Address} from "./Address";
+import {PhoneNumbers} from "./Phone-Numbers";
 
 
 export class Employee implements Deserializable {

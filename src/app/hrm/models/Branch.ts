@@ -1,5 +1,4 @@
 import {Address} from "./Address";
-import {JobPosition} from "../../base/models/job-position";
 
 export class Branch implements Deserializable {
 

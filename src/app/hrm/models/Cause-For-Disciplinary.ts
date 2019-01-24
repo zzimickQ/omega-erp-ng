@@ -1,4 +1,5 @@
 import {JobPosition} from "../../base/models/job-position";
+import {EmployeeDisciplinaryReport} from "./Employee-Disciplinary-Report";
 
 export class CauseForDisciplinary implements Deserializable {
 

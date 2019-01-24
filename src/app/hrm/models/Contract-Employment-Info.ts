@@ -1,6 +1,8 @@
 import {JobPosition} from "../../base/models/job-position";
 import {Branch} from "./Branch";
 import {BenefitPackage} from "./Benefit-Package";
+import {Employee} from "./Employee";
+
 
 export class ContractEmploymentInfo implements Deserializable {
 
@@ -26,6 +28,9 @@ export class ContractEmploymentInfo implements Deserializable {
 
     this.branchId = new Branch().deserialize(<any>single.branchId);
     delete single.branchId;
+
+    this.benefitPackageId = new BenefitPackage().deserializeArray(<any>single.benefitPackageId);
+    delete single.benefitPackageId;
 
 
     //noinspection TypeScriptUnresolvedFunction
