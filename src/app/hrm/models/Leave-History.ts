@@ -1,5 +1,4 @@
 import {Employee} from "./Employee";
-import {JobPosition} from "../../base/models/job-position";
 
 export class LeaveHistory implements Deserializable {
 
