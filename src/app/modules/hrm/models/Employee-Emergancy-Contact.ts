@@ -4,11 +4,11 @@ export class EmployeeEmergancyContact implements Deserializable {
 
   public id: number;
   public firstName: string;
-  public fatherName:string;
-  public grandFatherName:string;
-  public relationToEmployee:string;
-  public nationality:string;
-  public employee:Employee;
+  public fatherName: string;
+  public grandFatherName: string;
+  public relationToEmployee: string;
+  public nationality: string;
+  public employee: Employee;
 
 
   deserialize(single: any) {

@@ -2,19 +2,18 @@
  * Created by Heka on 1/11/2019.
  */
 import {PersonnelRequisition} from "./Personnel-Requisition";
-import {JobPosition} from "../../base/models/job-position";
 
 export class Vacancy implements Deserializable {
 
-  public id:number;
-  public recruitFrom:string;
-  public postDate:Date;
-  public updateDate:Date;
-  public appProcessDiscription:string;
-  public requestedQuantity:number;
-  public deadLine:Date;
-  public reanounce:number;
-  public remrk:string;
+  public id: number;
+  public recruitFrom: string;
+  public postDate: Date;
+  public updateDate: Date;
+  public appProcessDiscription: string;
+  public requestedQuantity: number;
+  public deadLine: Date;
+  public reanounce: number;
+  public remrk: string;
   public requisition: PersonnelRequisition;
 
   deserialize(single: any) {

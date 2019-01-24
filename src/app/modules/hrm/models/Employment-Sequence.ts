@@ -7,12 +7,12 @@ import {PersonnelRequisition} from "./Personnel-Requisition";
 export class EmploymentSequence implements Deserializable {
 
   public id: number;
-  public applicantSource:boolean;
-  public personnelRequisition:PersonnelRequisition;
-  public vacancy:Vacancy;
-  public applicants:Applicants;
-  public employee:Employee;
-  public employmentInfo:EmploymentInfo;
+  public applicantSource: boolean;
+  public personnelRequisition: PersonnelRequisition;
+  public vacancy: Vacancy;
+  public applicants: Applicants;
+  public employee: Employee;
+  public employmentInfo: EmploymentInfo;
 
 
   deserialize(single: any) {

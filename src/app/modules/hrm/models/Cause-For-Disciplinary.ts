@@ -1,14 +1,13 @@
-import {JobPosition} from "../../base/models/job-position";
 import {EmployeeDisciplinaryReport} from "./Employee-Disciplinary-Report";
 
 export class CauseForDisciplinary implements Deserializable {
 
   public id: number;
-  public causeType:number;
-  public startDate:Date;
-  public endDate:Date;
+  public causeType: number;
+  public startDate: Date;
+  public endDate: Date;
   public remark: string;
-  public employeeDesciplinaryReports:EmployeeDisciplinaryReport[];
+  public employeeDesciplinaryReports: EmployeeDisciplinaryReport[];
 
 
   deserialize(single: any) {

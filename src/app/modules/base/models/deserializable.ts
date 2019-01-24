@@ -5,5 +5,6 @@
 
 interface Deserializable {
   deserialize(single: any);
+
   deserializeArray(multi: any);
 }

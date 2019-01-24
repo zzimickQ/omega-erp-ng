@@ -7,14 +7,13 @@ import {Employee} from "./Employee";
 export class ContractEmploymentInfo implements Deserializable {
 
   public id: number;
-  public salary:number;
-  public startDate:Date;
-  public endDate:Date;
-  public employeeId:Employee;
-  public jobPositionId:JobPosition;
-  public branchId:Branch;
-  public benefitPackageId:BenefitPackage[];
-
+  public salary: number;
+  public startDate: Date;
+  public endDate: Date;
+  public employeeId: Employee;
+  public jobPositionId: JobPosition;
+  public branchId: Branch;
+  public benefitPackageId: BenefitPackage[];
 
 
   deserialize(single: any) {

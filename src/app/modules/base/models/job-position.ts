@@ -1,5 +1,6 @@
 import {JobCategory} from "./job-category";
 import {User} from "./user";
+
 /**
  * Created by Heka on 1/10/2019.
  */
@@ -17,10 +18,11 @@ export class JobPosition implements Deserializable {
   // public defaultPrivileges:
   public category: JobCategory;
 
-  constructor() {}
+  constructor() {
+  }
 
   public deserialize(single: any) {
-    if(single == null) return null;
+    if (single == null) return null;
     this.supervisor = new JobPosition().deserialize(<any>single.supervisor);
     delete single.supervisor;
     this.category = new JobCategory().deserialize(<any>single.category);
@@ -33,10 +35,11 @@ export class JobPosition implements Deserializable {
     Object.assign(this, single);
     return this;
   }
+
   public deserializeArray(multi: any) {
-    if(multi == null) return [];
+    if (multi == null) return [];
     let arrayOfMe = [];
-    for(let one of multi) {
+    for (let one of multi) {
       arrayOfMe.push(new JobPosition().deserialize(one));
     }
     return arrayOfMe;

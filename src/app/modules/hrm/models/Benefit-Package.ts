@@ -1,5 +1,4 @@
 import {BenefitPackageLevel} from "./Benefit-Package-Level";
-import {JobPosition} from "../../base/models/job-position";
 
 export class BenefitPackage implements Deserializable {
 

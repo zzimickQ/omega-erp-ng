@@ -4,10 +4,10 @@ export class PerformanceEvaluation implements Deserializable {
 
   public id: number;
   public remark: string;
-  public grade:number;
-  public evaluationDate:Date;
-  public evaluatingEmployee:Employee;
-  public employee:Employee;
+  public grade: number;
+  public evaluationDate: Date;
+  public evaluatingEmployee: Employee;
+  public employee: Employee;
 
 
   deserialize(single: any) {

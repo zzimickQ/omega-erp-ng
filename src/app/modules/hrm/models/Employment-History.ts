@@ -5,16 +5,16 @@ import {BenefitPackage} from "./Benefit-Package";
 export class EmploymentHistory implements Deserializable {
 
   public id: number;
-  public startDate:Date;
-  public endDate:Date;
-  public salary:number;
-  public empType:string;
-  public causeOfEnd:string;
-  public remark:string;
-  public employeeId:Employee;
-  public jobPositionId:JobPosition;
-  public benefitPackageId:BenefitPackage;
-  public responsibleForEndEmployeeId:Employee;
+  public startDate: Date;
+  public endDate: Date;
+  public salary: number;
+  public empType: string;
+  public causeOfEnd: string;
+  public remark: string;
+  public employeeId: Employee;
+  public jobPositionId: JobPosition;
+  public benefitPackageId: BenefitPackage;
+  public responsibleForEndEmployeeId: Employee;
 
 
   deserialize(single: any) {

@@ -4,14 +4,14 @@ import {ContractEmploymentInfo} from "./Contract-Employment-Info";
 export class ContractEmploymentEndExtentionHistory implements Deserializable {
 
   public id: number;
-  public fromEndDate:Date;
-  public toEndDate:Date;
-  public fromSalary:number;
-  public toSalary:number;
+  public fromEndDate: Date;
+  public toEndDate: Date;
+  public fromSalary: number;
+  public toSalary: number;
   public remark: string;
-  public contractEmploymentInfo:ContractEmploymentInfo;
-  public toBenefitPackages:BenefitPackage;
-  public fromBenefitPackages:BenefitPackage;
+  public contractEmploymentInfo: ContractEmploymentInfo;
+  public toBenefitPackages: BenefitPackage;
+  public fromBenefitPackages: BenefitPackage;
 
 
   deserialize(single: any) {

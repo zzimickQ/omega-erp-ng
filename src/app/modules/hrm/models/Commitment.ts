@@ -3,16 +3,15 @@ import {Employee} from "./Employee";
 export class Commitment implements Deserializable {
 
   public id: number;
-  public type:number;
-  public discription:string;
-  public deptAmount:number;
-  public deptpayed:number;
-  public startDate:Date;
-  public endDate:Date;
-  public paymentInterval:number;
-  public state:boolean;
-  public employee:Employee;
-
+  public type: number;
+  public discription: string;
+  public deptAmount: number;
+  public deptpayed: number;
+  public startDate: Date;
+  public endDate: Date;
+  public paymentInterval: number;
+  public state: boolean;
+  public employee: Employee;
 
 
   deserialize(single: any) {

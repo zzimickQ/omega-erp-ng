@@ -6,20 +6,20 @@ import {BenefitPackage} from "./Benefit-Package";
 export class PDTRequests implements Deserializable {
 
   public id: number;
-  public type:number;
-  public requestDate:Date;
-  public requestingDepartment:number;
-  public reason:string;
-  public toSalary:number;
-  public state:boolean;
-  public finalizedDate:Date;
-  public remark:string;
-  public requestedEmployee:Employee;
-  public initiatedByEmployee:Employee;
-  public employee:Employee;
-  public toBranch:Branch;
-  public toJobPosition:JobPosition;
-  public toBenefitPackage:BenefitPackage[];
+  public type: number;
+  public requestDate: Date;
+  public requestingDepartment: number;
+  public reason: string;
+  public toSalary: number;
+  public state: boolean;
+  public finalizedDate: Date;
+  public remark: string;
+  public requestedEmployee: Employee;
+  public initiatedByEmployee: Employee;
+  public employee: Employee;
+  public toBranch: Branch;
+  public toJobPosition: JobPosition;
+  public toBenefitPackage: BenefitPackage[];
 
 
   deserialize(single: any) {

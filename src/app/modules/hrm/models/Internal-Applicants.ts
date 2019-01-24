@@ -4,14 +4,13 @@ import {Employee} from "./Employee";
 export class InternalApplicants implements Deserializable {
 
   public id: number;
-  public applyDate:Date;
-  public interviewResult:number;
-  public interviewRemark:string;
-  public testResult:number;
-  public state:boolean;
-  public employee:Employee;
-  public vacancy:Vacancy;
-
+  public applyDate: Date;
+  public interviewResult: number;
+  public interviewRemark: string;
+  public testResult: number;
+  public state: boolean;
+  public employee: Employee;
+  public vacancy: Vacancy;
 
 
   deserialize(single: any) {

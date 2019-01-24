@@ -5,19 +5,19 @@ import {PhoneNumbers} from "./Phone-Numbers";
 export class Employee implements Deserializable {
 
   public id: number;
-  public firstName:string;
-  public fatherName:string;
-  public grandFatherName:string;
-  public gender:string;
-  public birthDate:Date;
-  public email:string;
-  public firstRegisteredDate:Date;
-  public meritalStatus:string;
-  public bankAccountNumber:string;
-  public entitledLeaveDays:number;
-  public nationality:string;
-  public primaryPhoneNumbers:PhoneNumbers;
-  public primaryAddress:Address;
+  public firstName: string;
+  public fatherName: string;
+  public grandFatherName: string;
+  public gender: string;
+  public birthDate: Date;
+  public email: string;
+  public firstRegisteredDate: Date;
+  public meritalStatus: string;
+  public bankAccountNumber: string;
+  public entitledLeaveDays: number;
+  public nationality: string;
+  public primaryPhoneNumbers: PhoneNumbers;
+  public primaryAddress: Address;
 
 
   deserialize(single: any) {

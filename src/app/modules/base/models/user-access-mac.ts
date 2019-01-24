@@ -1,4 +1,5 @@
 import {User} from "./user";
+
 /**
  * Created by Heka on 1/11/2019.
  */
@@ -23,9 +24,9 @@ export class UserAccessMac implements Deserializable {
 
 
   deserializeArray(multi: any) {
-    if(multi == null) return [];
+    if (multi == null) return [];
     let arrayOfMe = [];
-    for(let one of multi) {
+    for (let one of multi) {
       arrayOfMe.push(new UserAccessMac().deserialize(one));
     }
     return arrayOfMe;

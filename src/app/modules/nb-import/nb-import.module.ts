@@ -1,5 +1,5 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
 import {
   NbCardModule,
   NbInputModule,
@@ -29,4 +29,5 @@ import {
     NbListModule
   ]
 })
-export class NbImportModule { }
+export class NbImportModule {
+}

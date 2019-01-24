@@ -4,17 +4,17 @@ import {Employee} from "./Employee";
 export class PersonnelRequisition implements Deserializable {
 
   public id: number;
-  public requestDate:Date;
-  public requestSubmitionDate:Date;
-  public requestingDepartment:number;
-  public quantity:number;
-  public reasonForRequest:string;
-  public employmentType:string;
-  public reccruitFrom:string;
-  public requestStatus:number;
-  public initiatedBy:Employee;
-  public requestedByEmployee:Employee;
-  public jobPosition:JobPosition;
+  public requestDate: Date;
+  public requestSubmitionDate: Date;
+  public requestingDepartment: number;
+  public quantity: number;
+  public reasonForRequest: string;
+  public employmentType: string;
+  public reccruitFrom: string;
+  public requestStatus: number;
+  public initiatedBy: Employee;
+  public requestedByEmployee: Employee;
+  public jobPosition: JobPosition;
 
 
   deserialize(single: any) {

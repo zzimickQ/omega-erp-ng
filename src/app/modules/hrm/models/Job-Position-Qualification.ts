@@ -1,12 +1,12 @@
 export class JobPositionQualification implements Deserializable {
 
   public id: number;
-  public ageFrom:number;
-  public ageTo:number;
-  public gender:number;
-  public experinceYears:number;
-  public others:string;
-  public qualificationDescription:string;
+  public ageFrom: number;
+  public ageTo: number;
+  public gender: number;
+  public experinceYears: number;
+  public others: string;
+  public qualificationDescription: string;
 
 
   deserialize(single: any) {

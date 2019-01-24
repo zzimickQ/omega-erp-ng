@@ -4,8 +4,8 @@ export class Branch implements Deserializable {
 
   public id: number;
   public name: string;
-  public discription:string;
-  public address:Address;
+  public discription: string;
+  public address: Address;
 
   deserialize(single: any) {
     if (single == null) return null;

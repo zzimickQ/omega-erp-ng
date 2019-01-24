@@ -3,13 +3,13 @@ import {Employee} from "./Employee";
 export class LeaveHistory implements Deserializable {
 
   public id: number;
-  public leaveType:number;
-  public state:boolean;
-  public startDate:Date;
-  public endDate:Date;
-  public remark:string;
-  public requstedByEmployee:Employee;
-  public employee:Employee;
+  public leaveType: number;
+  public state: boolean;
+  public startDate: Date;
+  public endDate: Date;
+  public remark: string;
+  public requstedByEmployee: Employee;
+  public employee: Employee;
 
 
   deserialize(single: any) {

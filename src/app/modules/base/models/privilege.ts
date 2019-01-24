@@ -1,4 +1,5 @@
 import {User} from "./user";
+
 /**
  * Created by Heka on 1/10/2019.
  */
@@ -6,10 +7,10 @@ import {User} from "./user";
 
 export class Privilege implements Deserializable {
 
-    public id: number;
-    public name: String;
-    public discription: String;
-    public users: User[];
+  public id: number;
+  public name: String;
+  public discription: String;
+  public users: User[];
 
 
   deserialize(single: any) {
@@ -22,9 +23,9 @@ export class Privilege implements Deserializable {
 
 
   deserializeArray(multi: any) {
-    if(multi == null) return [];
+    if (multi == null) return [];
     let arrayOfMe = [];
-    for(let one of multi) {
+    for (let one of multi) {
       arrayOfMe.push(new Privilege().deserialize(one));
     }
     return arrayOfMe;

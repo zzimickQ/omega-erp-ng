@@ -3,10 +3,10 @@ import {Employee} from "./Employee";
 export class EmployeeDisciplinaryReport implements Deserializable {
 
   public id: number;
-  public reportedDate:Date;
-  public employeeNotifiedDate:Date;
-  public employee:Employee[];
-  public reporterEmployee:Employee[];
+  public reportedDate: Date;
+  public employeeNotifiedDate: Date;
+  public employee: Employee[];
+  public reporterEmployee: Employee[];
 
   deserialize(single: any) {
     if (single == null) return null;

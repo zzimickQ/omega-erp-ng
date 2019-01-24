@@ -3,11 +3,11 @@ import {JobPosition} from "../../base/models/job-position";
 export class JobPositionDocument implements Deserializable {
 
   public id: number;
-  public docType:string;
-  public mandatory:boolean;
-  public deadlineDays:number;
-  public remindInDays:number;
-  public jobPosition:JobPosition;
+  public docType: string;
+  public mandatory: boolean;
+  public deadlineDays: number;
+  public remindInDays: number;
+  public jobPosition: JobPosition;
 
 
   deserialize(single: any) {

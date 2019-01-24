@@ -3,15 +3,14 @@ import {Employee} from "./Employee";
 export class Suspention implements Deserializable {
 
   public id: number;
-  public salaryallowance:boolean;
-  public causeforsuspention:number;
-  public warnedofsuspension:boolean;
-  public startdate:Date;
-  public enddate:Date;
-  public remark:string;
-  public employee:Employee;
-  public requestedByEmployee:Employee;
-
+  public salaryallowance: boolean;
+  public causeforsuspention: number;
+  public warnedofsuspension: boolean;
+  public startdate: Date;
+  public enddate: Date;
+  public remark: string;
+  public employee: Employee;
+  public requestedByEmployee: Employee;
 
 
   deserialize(single: any) {
