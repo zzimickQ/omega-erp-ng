@@ -4,7 +4,7 @@ import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {NbSidebarService} from '@nebular/theme';
-import {BaseModule} from "./base/base.module";
+import {BaseModule} from "./modules/base/base.module";
 import {NbImportModule} from "./modules/nb-import/nb-import.module";
 
 @NgModule({
@@ -12,10 +12,10 @@ import {NbImportModule} from "./modules/nb-import/nb-import.module";
     AppComponent,
   ],
   imports: [
+    NbImportModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    NbImportModule,
     BaseModule,
   ],
   providers: [

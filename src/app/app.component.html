@@ -5,22 +5,19 @@
 
   </nb-layout-header>
 
-  <nb-sidebar></nb-sidebar>
-  <nb-list>
-
-  </nb-list>
   <nb-sidebar>
+    <nb-list>
 
-
-
+    </nb-list>
   </nb-sidebar>
 
-  <nb-layout-column>
 
   <nb-layout-column>
-
-    <router-outlet></router-outlet>
-
+    <nb-card>
+      <nb-card-body>
+        <router-outlet></router-outlet>
+      </nb-card-body>
+    </nb-card>
   </nb-layout-column>
 
   <nb-layout-footer fixed>
