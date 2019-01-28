@@ -5,10 +5,11 @@ import {
   NbCardModule,
   NbInputModule,
   NbLayoutModule,
-  NbListModule,
+  NbListModule, NbMenuModule, NbMenuService,
   NbSidebarModule,
-  NbThemeModule
+  NbThemeModule, NbUserModule
 } from "@nebular/theme";
+import {NbMenuInternalService} from "@nebular/theme/components/menu/menu.service";
 
 @NgModule({
   declarations: [],
@@ -21,6 +22,8 @@ import {
     NbInputModule,
     NbListModule,
     NbActionsModule,
+    NbMenuModule,
+    NbUserModule,
   ],
   exports: [
     NbThemeModule,
@@ -30,7 +33,12 @@ import {
     NbInputModule,
     NbListModule,
     NbActionsModule,
-
+    NbMenuModule,
+    NbUserModule,
+  ],
+  providers: [
+    NbMenuService,
+    NbMenuInternalService,
   ]
 })
 export class NbImportModule {
