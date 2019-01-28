@@ -1,8 +1,18 @@
 <nb-layout>
 
   <nb-layout-header fixed>
-    <!-- Insert header here -->
-    <nb-
+
+    <img src="assets/omega-erp-logo.svg" class="logo">
+
+    <nb-actions size="medium">
+      <nb-action icon="fa fa-search"></nb-action>
+      <nb-action icon="fa fa-user"></nb-action>
+      <nb-action icon="nb-person"></nb-action>
+      <nb-action icon="nb-home"></nb-action>
+      <nb-action icon="nb-gear" disabled></nb-action>
+    </nb-actions>
+
+
   </nb-layout-header>
 
   <nb-sidebar>
@@ -15,6 +25,7 @@
   <nb-layout-column>
     <nb-card>
       <nb-card-body>
+
         <router-outlet></router-outlet>
       </nb-card-body>
     </nb-card>

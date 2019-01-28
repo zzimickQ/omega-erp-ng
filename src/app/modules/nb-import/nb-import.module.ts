@@ -1,6 +1,7 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {
+  NbActionsModule,
   NbCardModule,
   NbInputModule,
   NbLayoutModule,
@@ -18,7 +19,8 @@ import {
     NbSidebarModule,
     NbCardModule,
     NbInputModule,
-    NbListModule
+    NbListModule,
+    NbActionsModule,
   ],
   exports: [
     NbThemeModule,
@@ -26,7 +28,9 @@ import {
     NbSidebarModule,
     NbCardModule,
     NbInputModule,
-    NbListModule
+    NbListModule,
+    NbActionsModule,
+
   ]
 })
 export class NbImportModule {
