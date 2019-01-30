@@ -29,4 +29,10 @@ export class UserServiceService {
   updateUserProfile() {
 
   }
+
+  getUser(userId: number): Observable<User> {
+    return this.http.get("/api/user/" + userId)
+      .pipe(map(val => new User().deserialize(val)));
+
+  }
 }
