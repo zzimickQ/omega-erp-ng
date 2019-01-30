@@ -1,9 +1,24 @@
-<h1>User Administration</h1>
+<nb-card>
+  <nb-card-header>
+    <h1>User Administration</h1>
+  </nb-card-header>
+  <nb-card-body>
+
+    <nb-actions>
+      <nb-action icon="eva eva-search-outline" title="Search" ></nb-action>
+      <nb-action icon="eva eva-plus-outline" title="Create" routerLink="/base/user/create"></nb-action>
+    </nb-actions>
+
+    <!--<input type="search" nbInput placeholder="Search User" fullWidth>-->
+
+    <br>
+    <!--<a nbButton routerLink="/base/user/create">Create User</a>-->
+
+    <og-list-view [items]="users"></og-list-view>
 
 
-<p>Some awesome text</p>
+  </nb-card-body>
+</nb-card>
 
-<input type="search" nbInput placeholder="Search User">
-<button nbButton>Search</button>
 
 

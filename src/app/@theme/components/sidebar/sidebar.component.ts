@@ -7,15 +7,14 @@ import {NbMenuItem} from "@nebular/theme";
   styleUrls: ['./sidebar.component.scss']
 })
 export class SidebarComponent implements OnInit {
-
   menu: NbMenuItem[] = [
     {
       title: "User Administration",
-      link: "/testlink123"
+      link: "base/users"
     },
     {
       title: "Organization Structure",
-      link: "/ola"
+      link: "base/ola"
     },
     {
       title: "",

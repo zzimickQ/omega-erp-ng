@@ -28,7 +28,9 @@
             ],
             "styles": [
               "src/styles.scss",
-              "node_modules/nebular-icons/scss/nebular-icons.scss"
+              "node_modules/nebular-icons/scss/nebular-icons.scss",
+              "node_modules/font-awesome/scss/font-awesome.scss",
+              "node_modules/eva-icons/style/scss/eva-icons.scss"
             ],
             "scripts": []
           },

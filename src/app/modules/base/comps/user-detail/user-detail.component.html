@@ -1,21 +1,32 @@
-<h3>Showing User Details</h3>
+<nb-card>
+  <nb-card-header>
+    <h3>Showing User Details</h3>
+  </nb-card-header>
+  <nb-card-body>
 
-<nb-layout>
-  <nb-layout-column>
+    <table>
+      <tr>
+        <td width="250">
+          <og-circle-image src="assets/pic.jpg"></og-circle-image>
+        </td>
+        <td>
+          <og-tablular-list [map]="mapobj"></og-tablular-list>
+        </td>
+      </tr>
+      <tr>
+        <td>
 
-    <img src="assets/pic.jpg" alt="">
+          <button nbButton fullWidth>Upload Profile Picture</button>
+          <button nbButton fullWidth>Edit Profile</button>
+          <button nbButton fullWidth>De-Activate User</button>
 
-    <button nbButton>Upload Profile Picture</button>
-    <button nbButton>Edit Profile</button>
-    <button nbButton>De-Activate User</button>
+        </td>
+        <td>
 
-  </nb-layout-column>
-  <nb-layout-column>
-    <b>FullName</b>
-    <p>Zemichael Tesfaye</p>
-    <b>Creating A</b>
-    <p>a single instance </p>
+        </td>
+      </tr>
+    </table>
+    <!--<img src="assets/pic.jpg" alt="">-->
 
-  </nb-layout-column>
-</nb-layout>
-
+  </nb-card-body>
+</nb-card>

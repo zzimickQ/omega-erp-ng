@@ -1,0 +1,54 @@
+<nb-card>
+  <nb-card-header>
+    <h2>Create A User Account</h2>
+  </nb-card-header>
+  <nb-card-body>
+    <p>Here you create an account for an employee with respect to his/her employee id.</p>
+
+    <form (ngSubmit)="submit(formGroup.value)" [formGroup]="formGroup">
+
+      <label>employee id</label>
+      <input type="text" formControlName="employeeId" nbInput>
+      <br>
+
+      <label>first name</label>
+      <input type="text" formControlName="firstName" nbInput>
+      <br>
+
+      <label>last name</label>
+      <input type="text" formControlName="lastName" nbInput>
+      <br>
+
+      <label>email</label>
+      <input type="text" formControlName="email" nbInput>
+      <br>
+
+      <label>username</label>
+      <input type="text" formControlName="username" nbInput>
+      <br>
+
+      <label>password</label>
+      <input type="text" formControlName="password" nbInput>
+      <br>
+
+      <label>phonenumber mobile</label>
+      <input type="text" formControlName="phoneNumberMobile" nbInput>
+      <br>
+
+      <label>phonenumber local</label>
+      <input type="text" formControlName="phoneNumberLocal" nbInput>
+      <br>
+
+      <label>profile url</label>
+      <input type="text" formControlName="profileUrl" nbInput>
+      <br>
+
+      <!--<label>job position</label>-->
+      <!--<input type="text" formControlName="jobPosition" nbInput>-->
+      <br>
+      <input type="submit" value="Submit">
+    </form>
+
+    {{formGroup.value | json }}
+  </nb-card-body>
+</nb-card>
